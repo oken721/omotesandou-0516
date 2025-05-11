@@ -1,0 +1,8 @@
+// ブレークポイント
+$breakpoints: (
+  // スマホ：767px 以下
+  sp: "screen and (max-width: #{($inner-width - 1px)})",
+  // → max-width: 767px
+  // PC：768px 以上
+  pc: "screen and (min-width: #{$inner-width})" // → min-width: 768px
+);

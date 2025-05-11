@@ -1,0 +1,9 @@
+@use "sass:map" as *;
+@use "./variables" as *;
+
+// メディアクエリー
+@mixin mq($breakpoint: sp) {
+  @media #{get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
