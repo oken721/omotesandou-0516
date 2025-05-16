@@ -1,1 +1,26 @@
 @use "../global" as *;
+
+body {
+  background-color: $base-color;
+  color: $base-black;
+  font-family: $ff-ja;
+}
+
+.inner {
+  max-width: 1189px;
+  margin: 0 auto;
+}
+
+.hidden-sp {
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.hidden-pc {
+  display: none;
+
+  @include mq(sp) {
+    display: block;
+  }
+}

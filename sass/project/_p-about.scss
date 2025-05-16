@@ -1,0 +1,130 @@
+@use "../global" as *;
+
+.p-about {
+  padding-top: 130px;
+  padding-bottom: 150px;
+  background: $main-color;
+
+  @include mq(sp) {
+    padding-top: 17.0666vw;
+    padding-bottom: 17.0666vw;
+  }
+}
+
+.p-about__inner {
+  max-width: 1160px;
+  padding-inline: 40px;
+
+  @include mq(sp) {
+    padding-inline: 4.2666vw;
+  }
+}
+
+.p-about__container {
+  margin-top: clamp-vw(68, 96);
+}
+
+.p-about__items {
+  display: flex;
+  flex-direction: column;
+  gap: clamp-vw(56, 64);
+}
+
+.p-about__item {
+  display: flex;
+  gap: clamp-vw(32, 70);
+  align-items: center;
+
+  @include mq(sp) {
+    flex-direction: column-reverse;
+  }
+
+  &:nth-of-type(2) {
+    flex-direction: row-reverse;
+
+    @include mq(sp) {
+      flex-direction: column-reverse;
+    }
+
+    .p-about__item-box {
+      &::after {
+        content: "02";
+        @include mq(sp) {
+          top: 8.5333vw;
+          right: -2.1333vw;
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(3) {
+    .p-about__item-box {
+      &::after {
+        content: "03";
+        @include mq(sp) {
+          top: -7.4666vw;
+          right: -2.1333vw;
+        }
+      }
+    }
+  }
+}
+
+.p-about__item-image {
+  max-width: 450px;
+
+  @include mq(sp) {
+    max-width: 100%;
+  }
+}
+
+.p-about__item-box {
+  width: 570px;
+  position: relative;
+  z-index: 0;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+
+  &::after {
+    content: "01";
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: $ff-quick;
+    font-size: clamp-vw(180, 288);
+    letter-spacing: 17.28px;
+    top: -100px;
+    right: 0;
+    z-index: -1;
+
+    @include mq(sp) {
+      letter-spacing: normal;
+      right: -4.8vw;
+      top: -1.0666vw;
+    }
+  }
+}
+
+.p-about__item-ttl {
+  font-size: clamp-vw(24, 30);
+  font-weight: 700;
+  letter-spacing: clamp-vw(1.2, 1.5);
+  white-space: nowrap;
+
+  span {
+    color: $accent-color;
+  }
+}
+
+.p-about__item-text {
+  width: clamp-vw(327, 400);
+  margin-top: clamp-vw(16, 24);
+  font-size: clamp-vw(16, 18);
+  line-height: 150%;
+  letter-spacing: clamp-vw(0.48, 0.54);
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}

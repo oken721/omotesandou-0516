@@ -1,0 +1,88 @@
+@use "../global" as *;
+
+.l-footer {
+  background: $main-color;
+  padding-top: clamp-vw(48, 56);
+  padding-bottom: 9px;
+  position: relative;
+}
+
+.l-footer__sns {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.l-footer__sns-icon {
+  display: inline-block;
+}
+
+.anchor {
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background-color: $base-color;
+  border: 2px solid $base-color;
+  position: relative;
+  transition: 0.3s ease;
+
+  &:hover {
+    background-color: transparent;
+    .fa-brands {
+      color: $base-color;
+    }
+  }
+}
+
+.fa-brands {
+  font-size: 26px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: $base-white;
+  transition: 0.3s ease;
+}
+
+.fa-square-x-twitter {
+}
+
+.fa-square-instagram {
+}
+
+.fa-square-facebook {
+}
+
+.l-footer__links {
+  margin-top: 40px;
+}
+
+.l-footer__link {
+  display: flex;
+  justify-content: center;
+  gap: clamp-vw(32, 40);
+}
+
+.l-footer__link-item {
+  font-family: $ff-quick;
+  font-size: clamp-vw(16, 18);
+  letter-spacing: clamp-vw(0.48, 0.54);
+}
+
+.l-footer__logo {
+  margin-top: clamp-vw(41, 43);
+  text-align: center;
+}
+
+.l-footer__copyright {
+  display: block;
+  margin-top: 1.3888vw;
+  text-align: center;
+  font-size: 12px;
+  letter-spacing: 0.36px;
+
+  @include mq(sp) {
+  margin-top: 7.7333vw;
+  }
+}

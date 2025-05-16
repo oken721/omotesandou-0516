@@ -1,0 +1,291 @@
+@use "../global" as *;
+
+.p-shop {
+  padding-block: 120px;
+  background-color: $main-color;
+}
+
+.p-shop__inner {
+  max-width: 1159px;
+  padding-inline: clamp-vw(16, 40);
+  margin: 0 auto;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-shop__map {
+  margin-top: 95px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  @include mq(sp) {
+    height: 250px;
+  }
+
+  iframe {
+    width: 100%;
+    height: clamp-vw(250, 465);
+  }
+}
+
+.p-shop__map-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.p-shop__access {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp-vw(40, 131);
+
+  @include mq(sp) {
+    flex-direction: column;
+  }
+}
+
+.p-shop__store-ttl {
+  display: flex;
+  align-items: flex-end;
+
+  @include mq(sp) {
+    justify-content: center;
+  }
+}
+
+.p-shop__store-prefix {
+  font-family: $ff-quick;
+  font-size: 18px;
+  margin-right: 4px;
+}
+
+.p-shop__store-main {
+  font-family: $ff-quick;
+  font-size: 32px;
+  line-height: 28px;
+  letter-spacing: 0.96px;
+
+  @include mq(sp) {
+    line-height: 100%;
+  }
+}
+
+.p-shop__store-sub {
+  font-size: 18px;
+  letter-spacing: clamp-vw(0.48, 0.54);
+
+  @include mq(sp) {
+    display: none;
+  }
+}
+
+.p-shop__store-sub-sp {
+  @include mq(sp) {
+    font-size: 16px;
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+  }
+}
+
+.p-shop__store-route {
+  margin-top: 25px;
+}
+
+.p-store__info-top {
+  font-size: clamp-vw(16, 18);
+  line-height: 200%;
+  letter-spacing: clamp-vw(0.48, 0.54);
+
+  @include mq(sp) {
+    line-height: 170%;
+  }
+}
+
+.p-store__info-style {
+}
+
+.p-shop__image {
+  margin-right: calc(-50vw + 50%);
+
+  @include mq(sp) {
+    margin: 0;
+  }
+}
+
+.p-store__info-bottom {
+  display: flex;
+  flex-direction: column;
+  margin-top: clamp-vw(5, 17);
+  font-size: clamp-vw(16, 18);
+  line-height: 200%;
+  letter-spacing: clamp-vw(0.48, 0.54);
+
+  @include mq(sp) {
+    line-height: 170%;
+  }
+}
+
+.p-store__info-row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.p-store__label {
+  width: 90px;
+}
+
+.p-store__value {
+  flex: 1;
+}
+
+.p-store__card-wrap {
+  margin-top: 5.5555vw;
+  max-width: 1146px;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+
+  @include mq(sp) {
+    width: 100%;
+    margin-top: 26.1333vw;
+  }
+}
+
+.p-store__card {
+  background: $base-white;
+  box-shadow: 0px 4px 20px 0px rgba(161, 159, 159, 0.6);
+  padding: 30px 32px 41px 32px;
+
+  @include mq(sp) {
+    padding: 18px 10px 113px 10px;
+  }
+}
+
+.p-store__card-stamp {
+  position: absolute;
+  top: -5.4861vw;
+  left: -7.222vw;
+  z-index: 10;
+
+  @include mq(sp) {
+    top: -11.2vw;
+    left: -3.4666vw;
+  }
+
+  img {
+    @include mq(sp) {
+      width: clamp-vw(112, 288);
+    }
+  }
+}
+
+.p-store__card-text-left {
+  position: absolute;
+  bottom: 113px;
+  left: 35px;
+  font-family: $ff-satisfy;
+  font-size: clamp-vw(30, 48);
+  letter-spacing: clamp-vw(1.5, 2.4);
+
+  @include mq(sp) {
+    bottom: 360px;
+    left: 20px;
+  }
+}
+
+.p-store__card-text-right {
+  position: absolute;
+  bottom: 15px;
+  right: 44px;
+
+  @include mq(sp) {
+    bottom: 31px;
+    right: 13px;
+  }
+}
+
+.p-store__card-images {
+  display: flex;
+  margin-bottom: 2.9861vw;
+
+  @include mq(sp) {
+    flex-direction: column;
+    margin-bottom: 16.8vw;
+  }
+}
+
+.p-store__card-image-left,
+.p-store__card-image-right {
+  img {
+    display: block;
+    width: 100%;
+    margin: 0;
+    height: auto;
+  }
+}
+
+.p-store__card-image-left {
+  width: 60%;
+  position: relative;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-store__card-image-rectangle-left {
+  position: absolute;
+  width: 93%;
+  height: 93%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid $base-white;
+}
+
+.p-store__card-image-right {
+  width: 43%;
+  position: relative;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-store__card-image-rectangle-right {
+  position: absolute;
+  width: 93%;
+  height: 93%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid $base-white;
+}
+
+.p-store__card-description {
+  width: clamp-vw(320, 612);
+  color: #4f4f4f;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+
+  p {
+    width: 100%;
+    line-height: 250%;
+
+    span {
+      @include mq(sp) {
+        display: block;
+        border-bottom: 1px solid #c4c4c4;
+        padding-left: 12px;
+      }
+    }
+  }
+}

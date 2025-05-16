@@ -12,14 +12,570 @@
     <meta property="og:image" content="" />
     <meta name="robots" content="noindex" />
 
-    <title>タイトル</title>
+    <title>表参道カフェ</title>
     <meta name="description" content="サイトの説明文" />
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Quicksand:wght@300..700&family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
 
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <div id="luxy">
+      <!-- header -->
+      <header class="l-header">
+        <div class="l-header__inner">
+          <h1 class="l-header__logo">
+            <a href="#">
+              <img src="./img/logo_header.png" alt="ヘッダーロゴ" />
+            </a>
+          </h1>
+          <nav class="l-header__nav">
+            <ul class="l-header__nav-list">
+              <li class="l-header__nav-item"><a href="#about">About</a></li>
+              <li class="l-header__nav-item"><a href="#menu">Menu</a></li>
+              <li class="l-header__nav-item"><a href="#shop">Shop</a></li>
+              <li class="l-header__nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- fv -->
+      <div class="p-fv">
+        <div class="p-fv__bg">
+          <picture>
+            <source
+              srcset="./img/fv_img.png"
+              media="screen and (min-width:768px)"
+            />
+            <img src="./img/sp/fv_img-sp.png" alt="" />
+          </picture>
+          <div class="p-fv__container">
+            <div class="p-fv__ttl">
+              <p class="p-fv__ttl-text">
+                Let's eat<br />delicious<br /><span>salad</span>.
+              </p>
+            </div>
+            <div class="p-fv__lead">
+              <p class="p-fv__lead-text">健康のためじゃない、</p>
+              <p class="p-fv__lead-green">「おいしいから食べたい」サラダ</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section -->
+      <section class="p-section">
+        <div class="p-section__container">
+          <h2 class="p-section__ttl">
+            毎日食べるからこそ、<br class="hidden-pc" />おいしいものを。
+          </h2>
+          <div class="p-section__box">
+            <p class="p-section__text">
+              ヘルシーで栄養豊富なサラダは、健康のために<br class="hidden-sp" />
+              毎日食べようと思っている人は多いはず。
+            </p>
+            <br />
+            <p class="p-section__text">
+              毎日食べるからこそ品質の良い、飽きのこない、<br
+                class="hidden-sp"
+              />
+              おいしいものを楽しんでいただきたい。
+            </p>
+            <br />
+            <p class="p-section__text">
+              そんな想いからできた「おいしいから食べたい」サラダをあなたに<br
+                class="hidden-sp"
+              />お届けいたします。
+            </p>
+          </div>
+        </div>
+        <span class="p-section__bg-text"
+          >Garden<br class="hidden-pc" />
+          Salad</span
+        >
+      </section>
+
+      <!-- About -->
+      <section class="p-about">
+        <div class="p-about__inner inner">
+          <div class="c-heading">
+            <span class="c-heading__text">Garden Saladのこだわり</span>
+            <h2 class="c-heading__ttl">About</h2>
+          </div>
+          <div class="p-about__container">
+            <div class="p-about__items">
+              <div class="p-about__item">
+                <div class="p-about__item-image">
+                  <img src="./img/abou-img01.png" alt="" />
+                </div>
+                <div class="p-about__item-box">
+                  <h3 class="p-about__item-ttl">
+                    全ての食材が安心の<span>国産</span>
+                  </h3>
+                  <p class="p-about__item-text">
+                    TF Garden
+                    Saladaの食材は全て産地の公表をしています。信頼できる農家さんから直接買い取り、その日採れたものをその日のうちに厨房へ。
+                  </p>
+                </div>
+              </div>
+              <div class="p-about__item">
+                <div class="p-about__item-image">
+                  <img src="./img/abou-img02.png" alt="" />
+                </div>
+                <div class="p-about__item-box">
+                  <h3 class="p-about__item-ttl">
+                    カスタム可能で<br />その組み合わせは<span>全400種類</span>！
+                  </h3>
+                  <p class="p-about__item-text">
+                    定番のメニューに加えてサラダのフルカスタムも可能。お好みのベース×トッピング×ドレッシングを選んであなた好みにアレンジして。
+                  </p>
+                </div>
+              </div>
+              <div class="p-about__item">
+                <div class="p-about__item-image">
+                  <img src="./img/abou-img03.png" alt="" />
+                </div>
+                <div class="p-about__item-box">
+                  <h3 class="p-about__item-ttl">
+                    <span>ジムトレーナー監修</span>の<br
+                      class="hidden-pc"
+                    />メニュー
+                  </h3>
+                  <p class="p-about__item-text">
+                    コンビニのサラダチキンに飽きたらこれ！一食でタンパク質20gがとれるトレーニング向けのメニューもご用意してます。
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- parallax-cake -->
+      <div class="l-parallax__wrapper">
+        <div class="luxy-el" data-speed-y="10" data-offset="-900">
+          <div class="l-parallax__image">
+            <img src="./img/parallax-cake.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <section class="p-menu">
+        <div class="p-menu__inner">
+          <div class="c-heading c-heading__white">
+            <span class="c-heading__text c-heading__text-white">メニュー</span>
+            <h2 class="c-heading__ttl c-heading__ttl-white">Menu</h2>
+          </div>
+          <p class="p-menu__text">P : タンパク質　F : 脂質　C : 糖質</p>
+          <div class="p-menu__container">
+            <div class="p-menu__items">
+              <div class="p-menu__item">
+                <div class="p-menu__item-image">
+                  <img src="./img/menu-img01.png" alt="" />
+                </div>
+                <div class="p-menu__item-wrap">
+                  <div class="p-menu__item-body p-menu__body">
+                    <div class="p-menu__body-heading">
+                      <p class="p-menu__body-heading-text">Recommendation</p>
+                      <p class="p-menu__body-heading-ttl">店長おすすめ</p>
+                    </div>
+                    <h3 class="p-menu__body-ttl">
+                      カッテージチーズと<br />バジルのサラダ
+                    </h3>
+                    <div class="p-menu__body-prices">
+                      <span class="p-menu__body-yen">¥</span>
+                      <span class="p-menu__body-price">1,100</span>
+                      <span class="p-menu__body-tax">（税込）</span>
+                    </div>
+                    <p class="p-menu__body-kcl">
+                      305kcal P : 16.2g F : 12.5g C : 13.3g
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-menu__item">
+                <div class="p-menu__item-image">
+                  <img src="./img/menu-img01.png" alt="" />
+                </div>
+                <div class="p-menu__item-wrap">
+                  <div class="p-menu__item-body p-menu__body">
+                    <h3 class="p-menu__body-ttl">
+                      カッテージチーズと<br />バジルのサラダ
+                    </h3>
+                    <div class="p-menu__body-prices">
+                      <span class="p-menu__body-yen">¥</span>
+                      <span class="p-menu__body-price">1,100</span>
+                      <span class="p-menu__body-tax">（税込）</span>
+                    </div>
+                    <p class="p-menu__body-kcl">
+                      305kcal P : 16.2g F : 12.5g C : 13.3g
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-menu__item-wrap p-menu__instagram">
+            <div class="p-menu__item-body p-menu__body p-menu__instagram-body">
+              <div class="p-menu__body-heading p-menu__heading-heading">
+                <p class="p-menu__body-heading-ttl p-menu__instagram-body-ttl">
+                  Instagram
+                </p>
+              </div>
+              <h3 class="p-menu__body-ttl p-menu__instagram-ttl">
+                Instagramにはさらに詳しいメニュー内容などを載せています
+              </h3>
+              <div class="p-menu__instagram-images">
+                <ul class="p-menu__instagram-items">
+                  <li class="p-menu__instagram-item">
+                    <img src="./img/instagram-img01.png" alt="" />
+                  </li>
+                  <li class="p-menu__instagram-item">
+                    <img src="./img/instagram-img02.png" alt="" />
+                  </li>
+                  <li class="p-menu__instagram-item">
+                    <img src="./img/instagram-img03.png" alt="" />
+                  </li>
+                  <li class="p-menu__instagram-item">
+                    <img src="./img/instagram-img04.png" alt="" />
+                  </li>
+                </ul>
+              </div>
+              <p class="p-menu__instagram-id">ID：tf_gardensalad</p>
+              <div class="p-menu__instagram-button">
+                <a href="#" class="c-button">
+                  <div class="c-button__text">もっとメニューを見る</div>
+                  <svg
+                    class="c-button__icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="22"
+                    height="22"
+                    viewBox="0 0 22 22"
+                    fill="none"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M2.38814 2.93354C2.00237 2.93354 1.6324 3.08678 1.35962 3.35956C1.08684 3.63234 0.933594 4.00231 0.933594 4.38808V17.479C0.933594 17.8648 1.08684 18.2347 1.35962 18.5075C1.6324 18.7803 2.00237 18.9335 2.38814 18.9335H15.479C15.8648 18.9335 16.2348 18.7803 16.5076 18.5075C16.7803 18.2347 16.9336 17.8648 16.9336 17.479V12.3881C16.9336 12.1952 16.857 12.0102 16.7206 11.8738C16.5842 11.7374 16.3992 11.6608 16.2063 11.6608C16.0134 11.6608 15.8285 11.7374 15.6921 11.8738C15.5557 12.0102 15.479 12.1952 15.479 12.3881V17.479H2.38814V4.38808H7.47905C7.67193 4.38808 7.85692 4.31146 7.99331 4.17507C8.1297 4.03868 8.20632 3.85369 8.20632 3.66081C8.20632 3.46792 8.1297 3.28294 7.99331 3.14655C7.85692 3.01016 7.67193 2.93354 7.47905 2.93354H2.38814ZM16.7212 3.1459C16.8565 3.28148 16.9328 3.46494 16.9336 3.65644V8.02444C16.9336 8.21733 16.857 8.40231 16.7206 8.5387C16.5842 8.67509 16.3992 8.75172 16.2063 8.75172C16.0134 8.75172 15.8285 8.67509 15.6921 8.5387C15.5557 8.40231 15.479 8.21733 15.479 8.02444V5.41644L7.99396 12.903C7.92634 12.9706 7.84606 13.0242 7.75772 13.0608C7.66937 13.0974 7.57468 13.1163 7.47905 13.1163C7.38342 13.1163 7.28873 13.0974 7.20038 13.0608C7.11203 13.0242 7.03176 12.9706 6.96414 12.903C6.89652 12.8354 6.84288 12.7551 6.80629 12.6667C6.76969 12.5784 6.75086 12.4837 6.75086 12.3881C6.75086 12.2925 6.76969 12.1978 6.80629 12.1094C6.84288 12.0211 6.89652 11.9408 6.96414 11.8732L14.4507 4.38808H11.8427C11.6498 4.38808 11.4648 4.31146 11.3284 4.17507C11.192 4.03868 11.1154 3.85369 11.1154 3.66081C11.1154 3.46792 11.192 3.28294 11.3284 3.14655C11.4648 3.01016 11.6498 2.93354 11.8427 2.93354H16.2063C16.3019 2.93329 16.3966 2.95192 16.485 2.98836C16.5733 3.0248 16.6536 3.07834 16.7212 3.1459Z"
+                      fill="#333333"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- parallax-cafe -->
+      <div class="l-parallax__wrapper">
+        <div class="luxy-el" data-speed-y="10" data-offset="-1100">
+          <div class="l-parallax__image">
+            <img src="./img/parallax-cafe.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!-- shop -->
+      <section class="p-shop">
+        <div class="p-shop__inner">
+          <div class="c-heading">
+            <span class="c-heading__text">店舗情報</span>
+            <h2 class="c-heading__ttl">Shop</h2>
+          </div>
+          <div class="p-shop__map">
+            <div class="p-shop__map-inner">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d936.3534970802817!2d139.70605448876483!3d35.667653366404636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z5p2x5Lqs6YO95riL6LC35Yy66KGo5Y-C6YGTIDEwIC0gMjAgLSAyMA!5e0!3m2!1sja!2sjp!4v1747290298335!5m2!1sja!2sjp"
+                width="1440"
+                height="465"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="p-shop__access">
+            <div class="p-shop__store-info">
+              <div class="p-shop__store-ttl">
+                <span class="p-shop__store-prefix">TF</span>
+                <h3 class="p-shop__store-main">Garden Salad</h3>
+                <span class="p-shop__store-sub">（ ガーデンサラダ ）</span>
+              </div>
+              <span class="p-shop__store-sub-sp">（ ガーデンサラダ ）</span>
+              <div class="p-shop__store-route">
+                <dl class="p-store__info-top">
+                  <dt>〒150 - 0000</dt>
+                  <dd class="p-store__info-style">
+                    東京都渋谷区表参道 10 - 20 - 20
+                  </dd>
+                  <dd>Tel. 090 - 1234 - 8899</dd>
+                </dl>
+                <dl class="p-store__info-bottom">
+                  <div class="p-store__info-row">
+                    <dt class="p-store__label">営業時間</dt>
+                    <dd class="p-store__value">11:00-20:00</dd>
+                  </div>
+                  <div class="p-store__info-row">
+                    <dt class="p-store__label">定休日</dt>
+                    <dd class="p-store__value">日曜</dd>
+                  </div>
+                  <div class="p-store__info-row">
+                    <dt class="p-store__label">アクセス</dt>
+                    <dd class="p-store__value">
+                      <p>
+                        東京メトロ千代田線「明治神宮前駅」5番出口から徒歩5分
+                      </p>
+                      <p>JR「原宿駅」東口から徒歩10分</p>
+                    </dd>
+                  </div>
+                </dl>
+              </div>
+            </div>
+            <div class="p-shop__image">
+              <picture>
+                <source
+                  srcset="./img/sotre-img.png"
+                  media="screen and (min-width: 768px)"
+                />
+                <img src="" alt="" />
+              </picture>
+              <img src="./img/sp/sotre-img-sp.png" alt="" />
+            </div>
+          </div>
+          <div class="p-store__card-wrap">
+            <div class="p-store__card">
+              <div class="p-store__card-stamp">
+                <img src="./img/sotre-stamp.png" alt="" />
+              </div>
+              <span class="p-store__card-text-left">Dear You.</span>
+              <div class="p-store__card-text-right">
+                <img src="./img/text-deco.png" alt="" />
+              </div>
+              <div class="p-store__card-images">
+                <div class="p-store__card-image-left">
+                  <div class="p-store__card-image-rectangle-left"></div>
+                  <picture>
+                    <source
+                      srcset="./img/sotre-img02.png"
+                      media="screen and (min-width: 768px)"
+                    />
+                    <img src="./img/sp/sotre-img02-sp.png" alt="" />
+                  </picture>
+                </div>
+                <div class="p-store__card-image-right">
+                  <div class="p-store__card-image-rectangle-right"></div>
+                  <picture>
+                    <source
+                      srcset="./img/sotre-img03.png"
+                      media="screen and (min-width: 768px)"
+                    />
+                    <img src="./img/sp/sotre-img03-sp.png" alt="" />
+                  </picture>
+                </div>
+              </div>
+              <div class="p-store__card-description">
+                <p>
+                  <span>当店から徒歩5分ほどの場所に、オープン</span
+                  ><span>テラスの場所があります。お天気がいい日</span
+                  ><span>は、木漏れ日の中で風を感じながら食べる</span
+                  ><span>のもおすすめです。</span>
+                  <span>テイクアウトもご用意できるので、ぜひご</span
+                  ><span>利用ください。</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact -->
+      <section class="p-contact">
+        <div class="p-contact__inner">
+          <div class="p-contact__container">
+            <div class="c-heading">
+              <span class="c-heading__text">お問い合わせ</span>
+              <h2 class="c-heading__ttl">Contact</h2>
+            </div>
+            <p class="p-contact__text">
+              ご質問などは、下記のフォームよりお問い合わせください。
+            </p>
+            <form action="" class="p-contact__form">
+              <div class="p-contact__fields">
+                <div class="p-contact__field">
+                  <div class="p-contact__field-head">
+                    <label for="company-name" class="p-contact__field-label"
+                      >お名前</label
+                    >
+                    <span class="p-contact__field-tag">必須</span>
+                  </div>
+                  <div class="p-contact__field-item">
+                    <input
+                      required
+                      class="c-form-text"
+                      type="text"
+                      name="company-name"
+                      id=""
+                      placeholder="例）山田　花子"
+                    />
+                  </div>
+                </div>
+                <div class="p-contact__field">
+                  <div class="p-contact__field-head">
+                    <label for="your-email" class="p-contact__field-label"
+                      >メールアドレス</label
+                    >
+                    <span class="p-contact__field-tag">必須</span>
+                  </div>
+                  <div class="p-contact__field-item">
+                    <input
+                      required
+                      class="c-form-text"
+                      type="text"
+                      name="your-email"
+                      id=""
+                      placeholder="例）hanako-yamada@example.com"
+                    />
+                  </div>
+                </div>
+                <div class="p-contact__field">
+                  <div class="p-contact__field-head">
+                    <label for="phone" class="p-contact__field-label"
+                      >電話番号</label
+                    >
+                  </div>
+                  <div class="p-contact__field-item">
+                    <input
+                      required
+                      class="c-form-text"
+                      type="text"
+                      name="phone"
+                      id=""
+                      placeholder="例）090-0000-0000"
+                    />
+                  </div>
+                </div>
+                <div class="p-contact__field">
+                  <div class="p-contact__field-head c-textarea-head">
+                    <div class="form-field__head">
+                      <label for="your-message" class="p-contact__field-label"
+                        >お問い合わせ内容</label
+                      >
+                      <span class="p-contact__field-tag">必須</span>
+                    </div>
+                    <div class="p-contact__field-item c-form__field-item">
+                      <textarea
+                        required
+                        cols="15"
+                        name="your-message"
+                        id="your-message"
+                        class="js-form-input c-form-textarea"
+                        placeholder="例）ご質問やお問い合わせ内容をご記入ください。"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-contact__privacy">
+                  <label class="p-contact__privacy-checkbox">
+                    <input
+                      required
+                      class="p-contact__checkbox-input"
+                      type="checkbox"
+                      name="your-privacy"
+                    />
+                    <span class="p-contact__privacy-text">
+                      <a href="#" target="_blank">プライバシーポリシー</a
+                      >に同意する。
+                    </span>
+                  </label>
+                </div>
+              </div>
+            </form>
+            <div class="contact__form-button">
+              <a href="#" class="contact__form-button-link">送信</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- footer -->
+      <footer class="l-footer">
+        <button
+          id="js-button-top"
+          class="c-page__top"
+          aria-label="ページトップへ"
+        >
+          <div class="c-page__top-svg">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="49"
+              height="49"
+              viewBox="0 0 39 34"
+              fill="none"
+            >
+              <path
+                d="M16.9019 1.49999C18.0566 -0.500006 20.9434 -0.5 22.0981 1.5L38.1195 29.25C39.2743 31.25 37.8309 33.75 35.5215 33.75H3.47852C1.16912 33.75 -0.274247 31.25 0.880454 29.25L16.9019 1.49999Z"
+                fill="#2f2f2f"
+              />
+            </svg>
+          </div>
+          <span class="c-page__top-text">Page top</span>
+        </button>
+        <ul class="l-footer__sns">
+          <li class="l-footer__sns-icon">
+            <a class="anchor" href="#"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+          <li class="l-footer__sns-icon">
+            <a class="anchor" href="#"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li class="l-footer__sns-icon">
+            <a class="anchor" href="#"
+              ><i class="fa-brands fa-facebook-f"></i
+            ></a>
+          </li>
+        </ul>
+        <nav class="l-footer__links" aria-label="フッターリンク">
+          <ul class="l-footer__link">
+            <li class="l-footer__link-item">
+              <a href="#">About</a>
+            </li>
+            <li class="l-footer__link-item">
+              <a href="#">Menu</a>
+            </li>
+            <li class="l-footer__link-item">
+              <a href="#">Shop</a>
+            </li>
+            <li class="l-footer__link-item">
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="l-footer__logo">
+          <img src="./img/footer-logo.png" alt="" />
+        </div>
+        <small class="l-footer__copyright">&copy;TF Garden Salad</small>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/luxy.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/cf2e9ef73c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

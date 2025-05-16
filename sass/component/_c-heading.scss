@@ -1,0 +1,46 @@
+@use "../global" as *;
+
+.c-heading {
+  text-align: center;
+}
+
+.c-heading__white {
+  color: $base-white;
+}
+
+.c-heading__text {
+  color: $accent-color;
+  font-size: clamp-vw(14, 18);
+  font-weight: 700;
+  letter-spacing: clamp-vw(0.7, 0.9);
+}
+
+.c-heading__text-white {
+  color: $base-white;
+}
+
+.c-heading__ttl {
+  margin-top: clamp-vw(12, 16);
+  font-family: $ff-quick;
+  font-size: clamp-vw(32, 48);
+  font-weight: 400;
+  letter-spacing: clamp-vw(1.6, 2.4);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: $accent-color;
+    bottom: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.c-heading__ttl-white {
+  &::after {
+    background: $base-white;
+  }
+}

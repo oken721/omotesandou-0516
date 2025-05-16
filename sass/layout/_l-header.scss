@@ -1,0 +1,49 @@
+@use "../global" as *;
+
+.l-header {
+  background-color: $base-color;
+}
+
+.l-header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  padding-right: 71px;
+  padding-left: 31px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    padding-right: 20px;
+    padding-left: 20px;
+    height: 60px;
+  }
+}
+
+.l-header__logo {
+  img {
+    @include mq(sp) {
+      width: 54px;
+    }
+  }
+}
+
+.l-header__nav {
+}
+
+.l-header__nav-list {
+  display: flex;
+  gap: 40px;
+
+  @include mq(sp) {
+    gap: 20px;
+  }
+}
+
+.l-header__nav-item {
+  color: $base-white;
+  font-family: $ff-quick;
+  font-size: clamp-vw(14, 18);
+  letter-spacing: 0.54px;
+}

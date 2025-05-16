@@ -1,0 +1,241 @@
+@use "../global" as *;
+
+.p-contact {
+  padding-block: 130px;
+  position: relative;
+
+  @include mq(sp) {
+    padding-block: 64px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(/img/contact-bg.png) no-repeat center center / cover;
+    inset: 0;
+    z-index: -1;
+  }
+}
+
+.p-contact__inner {
+  @include mq(sp) {
+    padding-inline: 16px;
+  }
+}
+
+.p-contact__container {
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 64px;
+  padding-bottom: 72px;
+  background: $main-color;
+
+  @include mq(sp) {
+    width: 100%;
+    padding-inline: 16px;
+    padding-bottom: 64px;
+  }
+}
+
+.p-contact__text {
+  text-align: center;
+  margin-top: 42px;
+  color: #333;
+  letter-spacing: 0.48px;
+
+  @include mq(sp) {
+    text-align: left;
+    margin-top: 60px;
+  }
+}
+
+.p-contact__form {
+  margin-top: 48px;
+
+  @include mq(sp) {
+    margin-top: 32px;
+  }
+}
+
+.p-contact__fields {
+  width: 520px;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+}
+
+.p-contact__field + .p-contact__field {
+  margin-top: 32px;
+}
+
+.p-contact__field-head {
+}
+
+.p-contact__field-label {
+  font-size: clamp-vw(16, 18);
+  display: inline-block;
+  line-height: 1.5;
+}
+
+.p-contact__field-item {
+  margin-top: 4px;
+}
+
+.c-form-text {
+  border: 1px solid #2f2f2f;
+  padding-top: 13px;
+  padding-bottom: calc(14px - 1px);
+  padding-left: clamp-vw(16, 23);
+  width: 100%;
+  outline: none;
+
+  &::placeholder {
+    color: #bdbdbd;
+  }
+
+  &:focus {
+    border: 1px solid #159741;
+    box-shadow: 0px 0px 4px 0px #159741;
+  }
+}
+
+.p-contact__field-tag {
+  display: inline-block;
+  vertical-align: text-bottom;
+  line-height: 1.5;
+  color: $base-white;
+  font-size: 12px;
+  padding: 1px 7px 3px 8px;
+  background-color: $accent-color;
+  border-radius: 6px;
+  margin-left: clamp-vw(10, 18);
+}
+
+.c-form-textarea {
+  width: 100%;
+  height: 160px;
+  border: 1px solid #2f2f2f;
+  padding-top: 13px;
+  padding-left: 23px;
+  outline: none;
+
+  &::placeholder {
+    color: #bdbdbd;
+  }
+
+  &:focus {
+    border: 1px solid #159741;
+    box-shadow: 0px 0px 4px 0px #159741;
+  }
+}
+
+.p-contact__privacy {
+  margin-top: 33px;
+  text-align: center;
+
+  @include mq(sp) {
+    margin-top: 35px;
+  }
+}
+
+.p-contact__privacy-checkbox {
+  cursor: pointer;
+}
+
+.p-contact__checkbox-input {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+
+  &:checked {
+    + .p-contact__privacy-text {
+      &::before {
+        background: rgba(21, 151, 65, 0.15);
+        border: 1px solid #159741;
+        box-shadow: 0px 0px 4px 0px #159741;
+      }
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.p-contact__privacy-text {
+  font-size: clamp-vw(16, 18);
+  line-height: 150%;
+  letter-spacing: clamp-vw(0.8, 0.9);
+  padding-left: 42px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    border: 1px solid $base-color;
+    background: $base-white;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 3px;
+    top: 6px;
+    width: 24px;
+    height: 18px;
+    background: url(/img/contact-arrow.png) no-repeat center center / contain;
+    opacity: 0;
+  }
+
+  &:focus {
+    &::before {
+      border: 1px solid #159741;
+      box-shadow: 0px 0px 4px 0px #159741;
+    }
+  }
+
+  a {
+    color: $accent-color;
+    text-decoration-line: underline;
+    outline: none;
+    transition: 0.3s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.contact__form-button {
+  margin-top: 42px;
+  text-align: center;
+}
+
+.contact__form-button-link {
+  color: $base-white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.9px;
+  padding-top: 15px;
+  padding-bottom: 14px;
+  background-color: $accent-color;
+  width: 239px;
+  display: inline-block;
+  transition: 0.3s ease;
+
+  @include mq(sp) {
+    width: 100%;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}

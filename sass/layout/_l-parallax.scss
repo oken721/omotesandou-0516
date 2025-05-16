@@ -1,0 +1,31 @@
+@use "../global" as *;
+
+@media screen and (max-width: 1080px) {
+  .luxy-el {
+    transform: none !important;
+    will-change: auto !important;
+  }
+}
+
+.l-parallax__wrapper {
+  height: min(450px, 31.25vw);
+  overflow: hidden;
+
+  @include mq(sp) {
+    height: 66.6666vw;
+  }
+}
+
+.l-parallax__image {
+  img {
+    width: 100%;
+  }
+
+  @media screen and (max-width: 1080px) {
+    transform: translateY(-300px);
+  }
+
+  @include mq(sp) {
+    transform: translateY(0px);
+  }
+}

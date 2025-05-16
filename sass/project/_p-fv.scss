@@ -1,0 +1,85 @@
+@use "../global" as *;
+
+.p-fv {
+  background-color: $base-color;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @include mq(sp) {
+    padding-bottom: 20px;
+  }
+}
+
+.p-fv__bg {
+  text-align: right;
+  position: relative;
+
+  img {
+    width: 75vw;
+    max-width: 1080px;
+
+    @include mq(sp) {
+      width: 82.1333vw;
+    }
+  }
+}
+
+.p-fv__container {
+  position: absolute;
+  text-align-last: left;
+  top: min(6.5277vw, 94px);
+  padding-left: min(12.3611vw, 178px);
+
+  @include mq(sp) {
+    padding-left: 20px;
+  }
+}
+
+.p-fv__ttl {
+}
+
+.p-fv__ttl-text {
+  color: $base-white;
+  font-family: $ff-quick;
+  font-size: clamp-vw(36, 100);
+  line-height: min(6.9444vw, 100px);
+
+  span {
+    color: $accent-color;
+  }
+
+  @include mq(sp) {
+    line-height: normal;
+  }
+}
+
+.p-fv__lead {
+  margin-top: clamp-vw(15, 37);
+}
+
+.p-fv__lead-text {
+  color: $base-white;
+  font-size: clamp-vw(14, 32);
+  font-weight: 700;
+  letter-spacing: clamp-vw(0.7, 1.6);
+
+    @include mq(sp) {
+    font-weight: 500;
+  }
+}
+
+.p-fv__lead-green {
+  background-color: $accent-color;
+  padding-block: clamp-vw(7, 9);
+  padding-right: clamp-vw(8, 21);
+  color: #fff;
+  font-size: clamp-vw(14, 32);
+  font-weight: 700;
+  letter-spacing: clamp-vw(0.7, 1.6);
+  margin-top: clamp-vw(9, 21);
+
+  @include mq(sp) {
+    padding-top: 4px;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,52 @@
+@use "../global" as *;
+
+.c-page__top {
+  width: clamp-vw(70, 120);
+  height: clamp-vw(70, 120);
+  border: 2px solid $base-black;
+  border-radius: 50%;
+  background: $base-white;
+  position: absolute;
+  top: -4.1666vw;
+  right: 60px;
+  transition: 0.3s ease;
+
+  @include mq(sp) {
+    top: -9.3333vw;
+    right: 4.2666vw;
+  }
+
+  &:hover {
+    background: $base-color;
+    .c-page__top-svg {
+      path {
+        fill: $base-white;
+      }
+    }
+
+    .c-page__top-text {
+      color: $base-white;
+    }
+  }
+}
+
+.c-page__top-svg {
+  width: clamp-vw(32, 49);
+  height: clamp-vw(32, 49);
+  text-align: center;
+
+  svg {
+    width: clamp-vw(32, 49);
+    height: clamp-vw(32, 49);
+  }
+  path {
+    transition: 0.3s ease;
+  }
+}
+
+.c-page__top-text {
+  font-family: $ff-quick;
+  font-size: clamp-vw(12, 16);
+  letter-spacing: clamp-vw(0.36, 0.48);
+  transition: 0.3s ease;
+}

@@ -1,0 +1,22 @@
+@use "../global" as *;
+
+.c-button {
+  width: clamp-vw(260, 300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 23px;
+  border: 1px solid $base-black;
+  margin: 0 auto;
+}
+
+.c-button__text {
+  display: inline-block;
+  font-size: clamp-vw(16, 16);
+  font-weight: 700;
+  letter-spacing: 0.48px;
+  padding-block: clamp-vw(17, 17);
+}
+
+.c-button__icon {
+}

@@ -1,0 +1,66 @@
+@use "../global" as *;
+
+.p-section {
+  background-color: $base-color;
+  padding-top: 120px;
+  padding-bottom: 110px;
+  position: relative;
+  overflow: hidden;
+
+  @include mq(sp) {
+    padding-top: 28px;
+    padding-bottom: 64px;
+  }
+}
+
+.p-section__container {
+  text-align: center;
+
+  @include mq(sp) {
+    padding-inline: 8.7999vw;
+  }
+}
+
+.p-section__ttl {
+  color: $base-white;
+  font-size: clamp-vw(20, 30);
+  font-weight: 700;
+  line-height: 150%;
+  letter-spacing: clamp-vw(1, 1.5);
+}
+
+.p-section__box {
+  margin-top: clamp-vw(24, 48);
+}
+
+.p-section__text {
+  color: $base-white;
+  font-size: clamp-vw(16, 18);
+  line-height: 150%;
+  letter-spacing: clamp-vw(0.48, 0.54);
+}
+
+.p-section__bg-text {
+  position: absolute;
+  color: rgba(103, 103, 103, 0.3);
+  text-align: center;
+  font-family: $ff-quick;
+  font-size: clamp-vw(110, 280);
+  font-weight: 400;
+  line-height: clamp-vw(88, 280);
+  white-space: nowrap;
+  display: block;
+  width: max-content;
+  bottom: -54px;
+  left: 50%;
+  transform: translateX(-43%);
+
+  @include mq(sp) {
+    letter-spacing: 3.3px;
+    bottom: -10px;
+    left: unset;
+    transform: none;
+    text-align: right;
+    right: 0;
+  }
+}
