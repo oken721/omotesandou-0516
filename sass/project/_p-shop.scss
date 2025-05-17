@@ -50,6 +50,7 @@
 .p-shop__store-ttl {
   display: flex;
   align-items: flex-end;
+  white-space: nowrap;
 
   @include mq(sp) {
     justify-content: center;
@@ -83,6 +84,7 @@
 }
 
 .p-shop__store-sub-sp {
+  display: none;
   @include mq(sp) {
     font-size: 16px;
     display: block;
@@ -178,6 +180,7 @@
   }
 
   img {
+    width: clamp-vw(112, 288);
     @include mq(sp) {
       width: clamp-vw(112, 288);
     }
@@ -281,10 +284,13 @@
     line-height: 250%;
 
     span {
+      border-bottom: 1px solid #c4c4c4;
+      padding-bottom: 6px;
+
       @include mq(sp) {
         display: block;
-        border-bottom: 1px solid #c4c4c4;
         padding-left: 12px;
+        padding-bottom: 0;
       }
     }
   }

@@ -1,6 +1,10 @@
 @use "../global" as *;
 
 .c-page__top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   width: clamp-vw(70, 120);
   height: clamp-vw(70, 120);
   border: 2px solid $base-black;
@@ -31,13 +35,13 @@
 }
 
 .c-page__top-svg {
-  width: clamp-vw(32, 49);
-  height: clamp-vw(32, 49);
+  width: clamp-vw(28, 49);
+  height: clamp-vw(28, 49);
   text-align: center;
 
   svg {
-    width: clamp-vw(32, 49);
-    height: clamp-vw(32, 49);
+    width: clamp-vw(28, 49);
+    height: clamp-vw(28, 49);
   }
   path {
     transition: 0.3s ease;

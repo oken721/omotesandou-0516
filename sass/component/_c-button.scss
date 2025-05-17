@@ -8,6 +8,20 @@
   gap: 23px;
   border: 1px solid $base-black;
   margin: 0 auto;
+  transition: 0.3s ease;
+
+  &:hover {
+    background: $base-black;
+    .c-button__text {
+      color: $base-white;
+    }
+
+    .c-button__icon {
+      path {
+        fill: $base-white;
+      }
+    }
+  }
 }
 
 .c-button__text {
@@ -16,7 +30,11 @@
   font-weight: 700;
   letter-spacing: 0.48px;
   padding-block: clamp-vw(17, 17);
+  transition: 0.3s ease;
 }
 
 .c-button__icon {
+  path {
+    transition: 0.3s ease;
+  }
 }

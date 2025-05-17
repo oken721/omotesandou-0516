@@ -177,8 +177,8 @@
           </div>
           <p class="p-menu__text">P : タンパク質　F : 脂質　C : 糖質</p>
           <div class="p-menu__container">
-            <div class="p-menu__items">
-              <div class="p-menu__item">
+            <div class="p-menu__items-top">
+              <div class="p-menu__item-t">
                 <div class="p-menu__item-image">
                   <img src="./img/menu-img01.png" alt="" />
                 </div>
@@ -202,22 +202,40 @@
                   </div>
                 </div>
               </div>
-              <div class="p-menu__item">
-                <div class="p-menu__item-image">
-                  <img src="./img/menu-img01.png" alt="" />
+            </div>
+            <div class="p-menu__items-bottom">
+              <div class="p-menu__item-b">
+                <div class="p-menu__item-image-b">
+                  <img src="./img/menu-img02.png" alt="" />
                 </div>
-                <div class="p-menu__item-wrap">
-                  <div class="p-menu__item-body p-menu__body">
-                    <h3 class="p-menu__body-ttl">
-                      カッテージチーズと<br />バジルのサラダ
-                    </h3>
+                <div class="p-menu__item-wrap-b">
+                  <div class="p-menu__item-body p-menu__body-b">
+                    <h3 class="p-menu__body-ttl">アボガドサラダ</h3>
                     <div class="p-menu__body-prices">
                       <span class="p-menu__body-yen">¥</span>
-                      <span class="p-menu__body-price">1,100</span>
+                      <span class="p-menu__body-price">980</span>
                       <span class="p-menu__body-tax">（税込）</span>
                     </div>
                     <p class="p-menu__body-kcl">
-                      305kcal P : 16.2g F : 12.5g C : 13.3g
+                      425kcal P : 12.2g F : 15.3g C : 16.8g
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="p-menu__item-b">
+                <div class="p-menu__item-image-b">
+                  <img src="./img/menu-img03.png" alt="" />
+                </div>
+                <div class="p-menu__item-wrap-b">
+                  <div class="p-menu__item-body p-menu__body-b">
+                    <h3 class="p-menu__body-ttl">チキンサラダ</h3>
+                    <div class="p-menu__body-prices">
+                      <span class="p-menu__body-yen">¥</span>
+                      <span class="p-menu__body-price">980</span>
+                      <span class="p-menu__body-tax">（税込）</span>
+                    </div>
+                    <p class="p-menu__body-kcl">
+                      455kcal P : 20.2g F : 11.3g C : 15.7g
                     </p>
                   </div>
                 </div>
@@ -348,9 +366,8 @@
                   srcset="./img/sotre-img.png"
                   media="screen and (min-width: 768px)"
                 />
-                <img src="" alt="" />
+                <img src="./img/sp/sotre-img-sp.png" alt="" />
               </picture>
-              <img src="./img/sp/sotre-img-sp.png" alt="" />
             </div>
           </div>
           <div class="p-store__card-wrap">
@@ -472,7 +489,7 @@
                         >お問い合わせ内容</label
                       >
                       <span class="p-contact__field-tag">必須</span>
-                    </div>
+                      </div>
                     <div class="p-contact__field-item c-form__field-item">
                       <textarea
                         required
@@ -494,17 +511,37 @@
                       name="your-privacy"
                     />
                     <span class="p-contact__privacy-text">
-                      <a href="#" target="_blank">プライバシーポリシー</a
+                    <button type="button" class="js-modal-open">プライバシーポリシー</button
                       >に同意する。
-                    </span>
+                  </span>
                   </label>
                 </div>
               </div>
             </form>
             <div class="contact__form-button">
-              <a href="#" class="contact__form-button-link">送信</a>
+              <button type="submit" class="contact__form-button-link">送信</button>
             </div>
           </div>
+          <dialog id="js-about-modal" class="c-modal">
+            <div class="c-modal__head">
+              <button class="c-modal__close-icon js-modal-close">
+                <img src="./img/akar-icon.png" alt="モーダルを閉じる" />
+              </button>
+            </div>
+            <div class="c-heading">
+              <span class="c-heading__text">プライバシポリシー</span>
+              <h2 class="c-heading__ttl">Privacy Policy</h2>
+            </div>
+            <div class="c-modal__body">
+              <p>
+                ＿＿＿＿＿＿＿＿（以下，「当社」といいます。）は，本ウェブサイト上で提供するサービス（以下,「本サービス」といいます。）における，ユーザーの個人情報の取扱いについて，以下のとおりプライバシーポリシー（以下，「本ポリシー」といいます。）を定めます。</p><br />
+                <span>第1条（個人情報）</span><br />
+                「個人情報」とは，個人情報保護法にいう「個人情報」を指すものとし，生存する個人に関する情報であって，当該情報に含まれる氏名，生年月日，住所，電話番号，連絡先その他の記述等により特定の個人を識別できる情報及び容貌，指紋，声紋にかかるデータ，及び健康保険証の保険者番号などの当該情報単体から特定の個人を識別できる情報（個人識別情報）を指します。<br />
+                <span>第2条（個人情報の収集方法）</span><br />
+                当社は，ユーザーが利用登録をする際に氏名，生年月日，住所，電話番号，メールアドレス，銀行口座番号，クレジットカード番号，運転免許証番号などの個人情報をお尋ねすることがあります。また，ユーザーと提携先などとの間でなされたユーザーの個人情報を含む取引記録や決済に関する情報を,当社の提携先（情報提供元，広告
+              </p>
+            </div>
+          </dialog>
         </div>
       </section>
 

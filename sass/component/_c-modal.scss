@@ -1,0 +1,33 @@
+.c-modal {
+  max-width: 730px;
+  margin: auto;
+  padding: 35px 0 0 0;
+  overflow-y: auto;
+  position: relative;
+
+  &::backdrop {
+    opacity: 0.2;
+    background: #000;
+  }
+}
+
+.c-modal__head {
+  position: absolute;
+  right: 23px;
+  top: 18px;
+}
+
+.c-modal__close-icon {
+}
+
+.js-modal-close {
+}
+
+.c-modal__body {
+  margin-top: 48px;
+  padding-inline: 62px;
+
+  span {
+    font-weight: 700;
+  }
+}
