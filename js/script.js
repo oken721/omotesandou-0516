@@ -1,4 +1,5 @@
 luxy.init({
+  wrapper: '#luxy-wrapper',
   wrapperSpeed: 0.4,
 });
 
@@ -13,8 +14,10 @@ jQuery("#js-button-top").on("click", function () {
 
 jQuery(".js-modal-open").on("click", function (e) {
   e.preventDefault();
+  e.stopPropagation();
 
   jQuery("#js-about-modal")[0].showModal();
+  return false;
 });
 
 jQuery(".js-modal-close").on("click", function (e) {
